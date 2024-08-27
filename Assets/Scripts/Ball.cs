@@ -78,7 +78,7 @@ public class Ball : MonoBehaviour
     public float angularVelocityDampening = 0.5f;
     public float maxVelocity = 10f; 
     public float maxAngularVelocity = 10f;
-
+    int j = 0;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
