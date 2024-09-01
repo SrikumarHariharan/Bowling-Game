@@ -1597,7 +1597,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 23c9da456ba8c9a4e8bef4e9493617dc, type: 2}
+  - {fileID: 2100000, guid: 4cd2bbcb2a31ad445a1cdde7892df2c3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2046,6 +2046,177 @@ Transform:
   - {fileID: 1230643478}
   m_Father: {fileID: 3244714747479989951}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &283729242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 283729243}
+  - component: {fileID: 283729245}
+  - component: {fileID: 283729244}
+  m_Layer: 3
+  m_Name: 'Password value '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &283729243
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283729242}
+  m_LocalRotation: {x: 0.016156197, y: -0.7073847, z: 0.016752481, w: 0.7064456}
+  m_LocalPosition: {x: 0, y: 0, z: 1.0376}
+  m_LocalScale: {x: 0.011540569, y: 0.011540569, z: 0.01154057}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 289117884}
+  m_LocalEulerAnglesHint: {x: 2.667, y: -90.075, z: 0.047}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 9.57123, y: 6.2159}
+  m_SizeDelta: {x: 20, y: 5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &283729244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283729242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 28
+  m_fontSizeBase: 28
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 16
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 0
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  _SortingLayer: 0
+  _SortingLayerID: 0
+  _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 283729245}
+  m_maskType: 0
+--- !u!23 &283729245
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283729242}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 0
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 2
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &289117883
 GameObject:
   m_ObjectHideFlags: 0
@@ -2076,7 +2247,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4896214698857321607}
+  - {fileID: 283729243}
   - {fileID: 986766924}
+  - {fileID: 475964499}
   m_Father: {fileID: 7629138064674972789}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &293000555
@@ -3703,6 +3876,177 @@ Transform:
   m_Children: []
   m_Father: {fileID: 335201413}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &475964498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 475964499}
+  - component: {fileID: 475964501}
+  - component: {fileID: 475964500}
+  m_Layer: 3
+  m_Name: WARN Password
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &475964499
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475964498}
+  m_LocalRotation: {x: 0.016156197, y: -0.7073847, z: 0.016752481, w: 0.7064456}
+  m_LocalPosition: {x: 0, y: 0, z: 1.0417}
+  m_LocalScale: {x: 0.0027469506, y: 0.0027469501, z: 0.0027469506}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 289117884}
+  m_LocalEulerAnglesHint: {x: 2.667, y: -90.075, z: 0.047}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 9.5765, y: 6.1762}
+  m_SizeDelta: {x: 20, y: 5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &475964500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475964498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: (The entered password is incorrect please check the password.)
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4279703320
+  m_fontColor: {r: 0.09433961, g: 0.088554636, b: 0.088554636, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 28
+  m_fontSizeBase: 28
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 16
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 0
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  _SortingLayer: 0
+  _SortingLayerID: 0
+  _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 475964501}
+  m_maskType: 0
+--- !u!23 &475964501
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475964498}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 0
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 2
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &535631130
 GameObject:
   m_ObjectHideFlags: 0
@@ -6996,7 +7340,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 2.667, y: -90.075, z: 0.047}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.5765, y: 6.2208}
+  m_AnchoredPosition: {x: 9.5765, y: 6.1766}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &986766925
@@ -17286,9 +17630,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: M
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -17691,9 +18037,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: 1
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -18022,9 +18370,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: 3
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -18277,9 +18627,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: B
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -18305,9 +18657,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: S
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -18386,9 +18740,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: H
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -18800,9 +19156,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: 5
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -19302,9 +19660,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: 8
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -19755,9 +20115,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: P
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -20607,9 +20969,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: X
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -20657,9 +21021,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: Y
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -20893,9 +21259,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: C
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -21487,9 +21855,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: V
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -23494,9 +23864,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: A
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -24453,9 +24825,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: U
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -24494,9 +24868,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: O
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -24714,9 +25090,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: 
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -27552,9 +27930,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: T
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -27618,9 +27998,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: D
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -27681,9 +28063,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: 
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -27701,9 +28085,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: Z
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -27836,9 +28222,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: W
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -28017,9 +28405,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: K
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -28159,9 +28549,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: 7
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -29036,9 +29428,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: 2
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -29056,9 +29450,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: 9
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -29118,9 +29514,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: 6
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -29212,9 +29610,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: 
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -29656,9 +30056,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: 0
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -30251,9 +30653,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: J
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -31372,9 +31776,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: L
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -31805,9 +32211,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: F
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -31825,9 +32233,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: N
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -31845,9 +32255,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: Q
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -32218,9 +32630,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: R
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -32451,9 +32865,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: G
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -33199,9 +33615,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: E
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -34079,9 +34497,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: 4
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
@@ -34342,8 +34762,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278321666
-  m_fontColor: {r: 0.009433985, g: 0.009433985, b: 0.009433985, a: 1}
+    rgba: 4278979598
+  m_fontColor: {r: 0.05660379, g: 0.046190828, b: 0.046190828, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -35259,9 +35679,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61e9a4bb6cce845a79784fdadfd54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNameOnMac: {fileID: 8874304755680356552}
+  playerNameOnMac: {fileID: 0}
+  passwordOnMac: {fileID: 0}
   value: I
   WarningText: {fileID: 986766923}
+  WarningTextPassword: {fileID: 475964498}
   material: {fileID: 2100000, guid: ca473bd14ae6a8a4887ac4505e03c4fb, type: 2}
   material2: {fileID: 2100000, guid: 68196e161d00dd04091f36bba618b962, type: 2}
   Quad: {fileID: 245025532}
