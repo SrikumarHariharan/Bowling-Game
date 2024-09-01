@@ -75,7 +75,7 @@ public class Keyboard : MonoBehaviour
             switch (gameObject.tag)
             {
                 case "Enter":
-                    if (Firsttime == false && GameStartedAfterClick == true)
+                    if (!Firsttime && GameStartedAfterClick)
                     {
                         FirstMove();
                     }
@@ -107,7 +107,7 @@ public class Keyboard : MonoBehaviour
                     }
                     break;
                 case "Space":
-                    if (Firsttime && GameStartedAfterClick == true)
+                    if (Firsttime && GameStartedAfterClick)
                     {
                         if (playerNameOnMac.text.Length <= 4)
                         {
@@ -124,7 +124,7 @@ public class Keyboard : MonoBehaviour
                     }
                     break;
                 case "Del":
-                    if (Firsttime && GameStartedAfterClick == true)
+                    if (Firsttime && GameStartedAfterClick)
                     {
                         if(playerNameOnMac.text.Length != 0)
                         {
@@ -141,7 +141,7 @@ public class Keyboard : MonoBehaviour
                     }
                     break;
                 case "OtherKeys":
-                    if (Firsttime && GameStartedAfterClick == true)
+                    if (Firsttime && GameStartedAfterClick)
                     {
                         if (playerNameOnMac.text.Length <= 4)
                         {
