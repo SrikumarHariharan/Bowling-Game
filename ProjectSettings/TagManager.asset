@@ -12,6 +12,7 @@ TagManager:
   - OtherKeys
   - Space
   - DestroyBall
+  - Next
   layers:
   - Default
   - TransparentFX

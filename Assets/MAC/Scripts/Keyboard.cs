@@ -9,8 +9,9 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class Keyboard : MonoBehaviour
 {
-    public TextMeshPro playerNameOnMac = null;
-    public TextMeshPro passwordOnMac = null;
+    public TMP_InputField playerNameOnMac = null;
+    public TMP_InputField passwordOnMac = null;
+    public GameObject UserField = null;
     public string value = "";
     private AudioSource keyClick = null;
     public GameObject WarningText = null;
@@ -24,6 +25,7 @@ public class Keyboard : MonoBehaviour
     private Renderer Quadrendrer = null;
     static bool Firsttime = false;
     static bool GameStartedAfterClick = true;
+    static bool isUserNameSelected = false;
 
 
     void Start()
@@ -31,6 +33,7 @@ public class Keyboard : MonoBehaviour
         keyRenderer = GetComponent<Renderer>();
         keyClick = GetComponent<AudioSource>();
         Quadrendrer = Quad.GetComponent<Renderer>();
+      
     }
        
     public void HighlightKey()
@@ -75,95 +78,148 @@ public class Keyboard : MonoBehaviour
             switch (gameObject.tag)
             {
                 case "Enter":
-                    if (!Firsttime && GameStartedAfterClick)
-                    {
-                        FirstMove();
-                    }
-                    else
-                    {
-                        if(playerNameOnMac.text.Length != 0 && playerNameOnMac.text.Length <= 5 && passwordOnMac.text == "password")
-                        {
-                            ChangeWallpaper2();
-                            //gameManager.GameStart(playerNameOnMac.text);
-                            if (Game_Manager.Instance != null)
-                            {
-                                Game_Manager.Instance.GameStart(playerNameOnMac.text);
-                            }
-                            playerNameOnMac.text = "";
-                            if (WarningText.activeInHierarchy)
-                            {
-                                WarningText.SetActive(false);
-                            }
-                            if (WarningTextPassword.activeInHierarchy)
-                            {
-                                WarningTextPassword.SetActive(false);
-                            }
-                            GameStartedAfterClick = false;
-                        }
-                        else if(passwordOnMac.text != "password")
-                        {
-                            WarningTextPassword.SetActive(true);
-                        }
-                    }
+                    EnterKeyFunc();
                     break;
                 case "Space":
-                    if (Firsttime && GameStartedAfterClick)
-                    {
-                        if (playerNameOnMac.text.Length <= 4)
-                        {
-                            playerNameOnMac.text = playerNameOnMac.text + " ";
-                        }
-                        else
-                        {
-                            if (!WarningText.activeInHierarchy)
-                            {
-                                WarningText.SetActive(false);
-                            }
-                        }
-                        
-                    }
+                    SpaceKeyFunc();
                     break;
                 case "Del":
-                    if (Firsttime && GameStartedAfterClick)
-                    {
-                        if(playerNameOnMac.text.Length != 0)
-                        {
-                            playerNameOnMac.text = playerNameOnMac.text.Substring(0, playerNameOnMac.text.Length - 1);
-                        }
-                        if (playerNameOnMac.text.Length <= 4)
-                        {
-                            if(WarningText.activeInHierarchy)
-                            {
-                                WarningText.SetActive(false);
-                            }
-
-                        }
-                    }
+                    DelKeyFunc();
+                    break;
+                case "Next":
+                    NextKey();
                     break;
                 case "OtherKeys":
-                    if (Firsttime && GameStartedAfterClick)
-                    {
-                        if (playerNameOnMac.text.Length <= 4)
-                        {
-                            playerNameOnMac.text = playerNameOnMac.text + value;
-                        }
-                        else
-                        {
-                            WarningText.SetActive(true);
-                        }
-                        if (playerNameOnMac.text == "")
-                        {
-                            playerNameOnMac.text = value;
-                        }
-                    }
-
+                    OtherKeysFunc();
                     break;
             }
             
             
         }
     }
-    
+    void OtherKeysFunc()
+    {
+        if (isUserNameSelected)
+        {
+            if (Firsttime && GameStartedAfterClick)
+            {
+                if (playerNameOnMac.text.Length <= 4)
+                {
+                    playerNameOnMac.text = playerNameOnMac.text + value;
+                }
+                else
+                {
+                    WarningText.SetActive(true);
+                }
+                if (playerNameOnMac.text == "")
+                {
+                    playerNameOnMac.text = value;
+                }
+            }
+        }
+        else
+        {
+             passwordOnMac.text = passwordOnMac.text + value;
+        }
+    }
+    void NextKey()
+    {
+        if (playerNameOnMac.isActiveAndEnabled)
+        {
+            SelectUserPasswordField();
+        }
+        else
+        {
+            SelectUserNameField();
+        }
+    }
+    void DelKeyFunc()
+    {
+        if (isUserNameSelected)
+        {
+            if (Firsttime && GameStartedAfterClick)
+            {
+                if (playerNameOnMac.text.Length != 0)
+                {
+                    playerNameOnMac.text = playerNameOnMac.text.Substring(0, playerNameOnMac.text.Length - 1);
+                }
+                if (playerNameOnMac.text.Length <= 4)
+                {
+                    if (WarningText.activeInHierarchy)
+                    {
+                        WarningText.SetActive(false);
+                    }
+                }
+            }
+        }
+        else
+        {
+            if (passwordOnMac.text.Length != 0)
+            {
+                passwordOnMac.text = passwordOnMac.text.Substring(0, passwordOnMac.text.Length - 1);
+            }
+        }
+    }
+    void SpaceKeyFunc()
+    {
+        if (Firsttime && GameStartedAfterClick)
+        {
+            if(isUserNameSelected)
+            {
+                if (playerNameOnMac.text.Length <= 4)
+                {
+                    playerNameOnMac.text = playerNameOnMac.text + " ";
+                }
+                else
+                {
+                    if (!WarningText.activeInHierarchy)
+                    {
+                        WarningText.SetActive(false);
+                    }
+                }
+            }
+            else
+            {
+                passwordOnMac.text = playerNameOnMac.text + " ";
+            }
+        }
+    }
+    void EnterKeyFunc()
+    {
+        if (!Firsttime && GameStartedAfterClick)
+        {
+            FirstMove();
+        }
+        else
+        {
+            if (playerNameOnMac.text.Length != 0 && playerNameOnMac.text.Length <= 5 && passwordOnMac.text.ToLower() == "sklog")
+            {
+                ChangeWallpaper2();
+                //gameManager.GameStart(playerNameOnMac.text);
+               
+                if (Game_Manager.Instance != null)
+                {
+                    Game_Manager.Instance.GameStart(playerNameOnMac.text);
+                }
+                playerNameOnMac.text = "";
+                passwordOnMac.text = "";
+                if (WarningText.activeInHierarchy)
+                {
+                    WarningText.SetActive(false);
+                }
+                if (WarningTextPassword.activeInHierarchy)
+                {
+                    WarningTextPassword.SetActive(false);
+                }
+                GameStartedAfterClick = false;
+            }
+            else
+            {
+                WarningTextPassword.SetActive(true);
+            }
+        }
+    }
+
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("Type"))
@@ -177,6 +233,26 @@ public class Keyboard : MonoBehaviour
         PlayAudio();
         ResetKey();
         ChangeWallpaper1();
+        //SetActiveUserAndPasswordField();
+        SelectUserNameField();
+    }
+    void SetActiveUserAndPasswordField()
+    {
+        //if (!UserField.activeInHierarchy)
+        {
+            UserField.SetActive(true);
+        }
+    }
+    void SelectUserNameField()
+    {
+        playerNameOnMac.ActivateInputField();
+        isUserNameSelected = true;
+    }
+
+    void SelectUserPasswordField()
+    {
+        passwordOnMac.ActivateInputField();
+        isUserNameSelected = false;
     }
 
     void ChangeWallpaper1()
