@@ -124,7 +124,7 @@ public class Keyboard : MonoBehaviour
     }
     void NextKey()
     {
-        if (playerNameOnMac.isActiveAndEnabled)
+        if (isUserNameSelected)
         {
             SelectUserPasswordField();
         }
